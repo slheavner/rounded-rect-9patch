@@ -22,7 +22,7 @@ const help = `
     --res           fhd         base resolution name (fhd, hd) of radius. The other image will scale in the opposite direction.
     --fhd           fhd         value to use for fhd resolution name
     --hd            fhd         value to use for hd resolution name
-    --output        rounded-rectangle-{res}-{radius}px.9.png
+    --output        {res}/rounded-rect-{radius}px.9.png
                                 filename template, must include {res} and {radius} if noScale=true
     --noScale       false       if true, ignore res option, create a single image
 `;
@@ -30,7 +30,7 @@ let unknowns = false;
 const options = minimist(process.argv.slice(2), {
   default: {
     noScale: false,
-    output: "rounded-rectangle-{res}-{radius}px.9.png",
+    output: "{res}/rounded-rect-{radius}px.9.png",
     res: "fhd",
     fhd: "fhd",
     hd: "hd",

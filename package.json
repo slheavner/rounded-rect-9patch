@@ -1,6 +1,6 @@
 {
   "name": "rounded-rect-9patch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Command line rounded rectangle 9patch generator, created with Roku in mind",
   "main": "index.js",
   "repository": {
