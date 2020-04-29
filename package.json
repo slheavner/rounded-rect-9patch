@@ -1,0 +1,28 @@
+{
+  "name": "rounded-rect-9patch",
+  "version": "1.0.0",
+  "description": "Command line rounded rectangle 9patch generator, created with Roku in mind",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slheavner/rounded-rect-9patch.git"
+  },
+  "homepage": "https://github.com/slheavner/rounded-rect-9patch",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "rounded-rect-9patch": "./cli.js"
+  },
+  "author": {
+    "email": "slheavner@gmail.com",
+    "name": "Sam Heavner",
+    "url": "https://github.com/slheavner"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^9.0.0",
+    "minimist": "^1.2.5",
+    "node-html-to-image": "^1.2.0"
+  }
+}
