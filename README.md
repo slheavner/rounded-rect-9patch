@@ -41,3 +41,13 @@ rounded-rect-9patch --help
 
 ## Make a simple rectangle with 6px, 9px, and 15px radius, but scale to image-fhd-{radius}px.9.png and image-hd-{radius}px.9.png
 `rounded-rect-9patch 6 9 15 --output image-{res}-{radius}px.9.png`
+
+## Developement
+
+```bash
+git clone <Repo Link>
+cd rounded-rect-9patch
+npm install
+
+npx rounded-rect-9patch 15 --noScale  --output buttonBg
+``` 
