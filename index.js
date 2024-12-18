@@ -16,7 +16,7 @@ function createContent(config) {
   } = config;
 
   const width =
-    radius * extraRadius * 2 + margin * 2 + stretchWidth + borderWidth * 2;
+    radius + extraRadius * 2 + margin * 2 + stretchWidth + borderWidth * 2;
   const stretchMargin = width / 2 - 1;
   const marginWidth = width / 2 - stretchWidth / 2;
   const rectWidth = width - margin * 2 - borderWidth * 2;

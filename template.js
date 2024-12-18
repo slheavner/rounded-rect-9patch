@@ -2,13 +2,13 @@ module.exports = `
 <html>
 
 <body style="width: {{width}}px; height: {{width}}px;">
-    <div style="
-        background-color: black;
-        width: {{stretchWidth}}px;
-        height: 1px;
-        margin-left: {{marginWidth}}px;
-      "></div>
-    <div>
+        <div style="
+            background-color: black;
+            width: {{stretchWidth}}px;
+            height: 1px;
+            margin-left: {{marginWidth}}px;
+          "></div>
+        <div>
         <div style="
           background-color: black;
           width: 1px;
@@ -16,7 +16,6 @@ module.exports = `
           float: left;
           margin-top: {{topMargin}}px;
         "></div>
-
         <div style="
           background-color: black;
           width: 1px;

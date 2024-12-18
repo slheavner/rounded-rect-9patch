@@ -9,7 +9,15 @@
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
-      "args": ["10", "--borderWidth", "6", "--fillColor", "#00000000"],
+      "args": [
+        "10",
+        "--borderWidth",
+        "6",
+        "--fillColor",
+        "#00000000",
+        "--extraRadius",
+        "0"
+      ],
       "program": "${workspaceFolder}/cli.js"
     }
   ]
