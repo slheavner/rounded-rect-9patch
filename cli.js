@@ -134,8 +134,7 @@ let hasError = false;
 valid.forEach((v) => {
   if (!v.valid) {
     console.error(
-      `option ${v.option}: value "${options[v.option].toString()}" - ${
-        v.function.message
+      `option ${v.option}: value "${options[v.option].toString()}" - ${v.function.message
       }`
     );
     hasError = true;
@@ -165,12 +164,12 @@ numbers.forEach((key) => {
   }
 });
 options.radius.forEach((r) => {
-  index.generateImage({ ...options, radius: r }, options[options.res], r);
+  const imageOptions = { ...options, radius: r }
+  index.generateImage(imageOptions, options[options.res], r);
+
   if (!options.noScale) {
-    if (options.res === "fhd") {
-      index.generateImage({ ...options, radius: r * (2 / 3) }, options.hd, r);
-    } else {
-      index.generateImage({ ...options, radius: r * 1.5 }, options.fhd, r);
-    }
+    let scale = options.res === 'fhd' ? 2 / 3 : 1.5
+    let scaleType = options.res === 'fhd' ? options.hd : options.fhd
+    index.generateImage({ ...imageOptions, scale }, scaleType, r);
   }
 });

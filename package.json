@@ -21,8 +21,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "fs-extra": "^9.0.0",
-    "minimist": "^1.2.5",
-    "node-html-to-image": "^1.2.0"
+    "fs-extra": "^11.2.0",
+    "minimist": "^1.2.8",
+    "node-html-to-image": "^5.0.0"
   }
 }

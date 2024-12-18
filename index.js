@@ -67,6 +67,10 @@ module.exports.generateImage = function (options, res, realRadius) {
     ...config,
     ...options,
   };
+  if (theseOptions.scale !== undefined) {
+    theseOptions.radius *= theseOptions.scale
+    theseOptions.borderWidth *= theseOptions.scale
+  }
   const output = options.output
     .replace("{res}", res)
     .replace("{radius}", realRadius);

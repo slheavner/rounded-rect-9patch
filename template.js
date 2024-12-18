@@ -28,7 +28,7 @@ module.exports = `
           width: {{rectWidth}}px;
           height: {{rectWidth}}px;
           background-color: {{fillColor}};
-          border-radius-inner: {{borderRadius}}px;
+          border-radius-inner: {{radius}}px;
           border: {{borderWidth}}px solid {{borderColor}};
           border-radius: {{radius}}px;
           margin-left: {{margin}}px;
