@@ -22,7 +22,7 @@ function createContent(config) {
   const rectWidth = width - margin * 2 - borderWidth * 2;
   const topMargin = marginWidth - 1;
   const paddingLeftMargin = paddingX + 1;
-  const paddingTopMargin = paddingY + 1;
+  const paddingTopMargin = paddingY;
   return {
     ...config,
     width,
